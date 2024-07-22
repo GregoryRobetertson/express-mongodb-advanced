@@ -8,12 +8,15 @@ const SALT_WORK_FACTOR = 10; // Adjust this value to control hashing time (highe
 const userSchema = new mongoose.Schema({
   name: {
     type: String,
-    required: true
+    required: true 
   },
   email: {
     type: String,
-    unique: true,
+    unique: true, 
     required: true
+  },
+  password: {
+    type: String
   },
   role: {
     type: String,
